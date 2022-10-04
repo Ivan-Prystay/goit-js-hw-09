@@ -10,8 +10,8 @@ function handleSubmit(event) {
     elements: { delay, step, amount },
   } = event.currentTarget;
 
-  if (+delay.value <= 0 || +step.value <= 0 || +amount.value <= 0) {
-    return Notify.failure('Please enter numbers > 0');
+  if (+delay.value < 0 || +step.value < 0 || +amount.value < 0) {
+    return Notify.failure('Please enter non-negative numbers');
   }
 
   const startDelay = +delay.value;
