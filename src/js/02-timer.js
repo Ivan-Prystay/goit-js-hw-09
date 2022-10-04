@@ -1,6 +1,6 @@
 import flatpickr from 'flatpickr';
-import 'flatpickr/dist/flatpickr.min.css';
-import 'flatpickr/dist/themes/material_blue.css';
+//import 'flatpickr/dist/flatpickr.min.css';
+import 'flatpickr/dist/themes/dark.css';
 import { Ukrainian } from 'flatpickr/dist/l10n/uk.js';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -30,12 +30,12 @@ const valueRefs = document.querySelectorAll('.value');
 let timerDeadline = null;
 let timeIntervalId = null;
 let diff = null;
+``;
 
 const configNotyfy = {
   closeButton: true,
   clickToClose: true,
   position: 'center-top',
-  backOverlay: true,
 };
 
 const options = {
